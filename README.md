@@ -1,1 +1,1 @@
-# React-Starter-Repo
+# Standard starting packages and files for react project
