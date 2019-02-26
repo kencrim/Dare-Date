@@ -7,7 +7,7 @@ class DareList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dareList: ["dare1","dare2","dare3","dare4"]
+      dareList: [{bool: true, strikes: true, timer: true, currentStrikes: 0, date: null}]
     };
   }
 
