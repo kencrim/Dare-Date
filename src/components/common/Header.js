@@ -7,6 +7,8 @@ const Header = () => {
 			<IndexLink style={{textDecoration:"none"}} to="/" activeClassName="active">Home</IndexLink>
 			{"  |  "}
 			<Link style={{textDecoration:"none"}} to="about" activeClassName="active">About</Link>
+      {"  |  "}
+      <Link style={{textDecoration:"none"}} to="dare" activeClassName="active">Dare List</Link>
 			{"  |  "}
 			<Link style={{textDecoration:"none"}} to="login" activeClassName="active">Log In</Link>
 		</nav>
