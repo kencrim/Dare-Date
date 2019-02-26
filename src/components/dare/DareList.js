@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import Dare from './Dare';
 
 class DareList extends React.Component {
   
@@ -15,7 +16,7 @@ class DareList extends React.Component {
 			<div className="jumbotron">
         <h3>Dare List</h3>
         {this.state.dareList.map((dare) => {
-          return (<div>{dare}</div>);
+          return (<Dare dare={dare}/>);
         })}
 			</div>
 			);
