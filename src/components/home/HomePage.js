@@ -6,6 +6,7 @@ class HomePage extends React.Component {
 		return (
 			<div className="jumbotron">
 				<h3>Home</h3>
+				<div className="removed-item">Hello</div>
 			</div>
 			);
 	}
