@@ -1,11 +1,12 @@
+import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router';
-import Routes from './routes';
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 render(
-	<BrowserRouter><Routes /></BrowserRouter>,
+	<Router history={browserHistory} routes={routes} />,
 	document.getElementById('app')
 );

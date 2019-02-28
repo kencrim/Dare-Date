@@ -1,10 +1,10 @@
 import React, {PropTypes} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, IndexLink } from 'react-router';
 
 const Header = () => {
 	return (
 		<nav>
-			<Link style={{textDecoration:"none"}} to="/" activeClassName="active">Home</Link>
+			<IndexLink style={{textDecoration:"none"}} to="/" activeClassName="active">Home</IndexLink>
 			{"  |  "}
 			<Link style={{textDecoration:"none"}} to="about" activeClassName="active">About</Link>
 			{"  |  "}
