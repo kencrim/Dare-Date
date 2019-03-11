@@ -56,3 +56,8 @@ nav {
     transform: translateX(-800px)
   }
 }
+
+.theDare {
+  display: flex;
+  flex-direction: row;
+}
