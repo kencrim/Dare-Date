@@ -4,6 +4,7 @@ import {Route, Switch } from 'react-router-dom';
 import HomePage from '../components/home/HomePage';
 import AboutPage from '../components/about/AboutPage';
 import DareList from '../components/dare/DareList';
+import AddDare from '../components/addDare/AddDare';
 
 class App extends React.Component {
 
@@ -37,11 +38,11 @@ class App extends React.Component {
 	render(){
 		return (
 			<div className="container-fluid">
-				<button onClick = {this.addDare}>Add Dare</button>
 				<Header/>
 				<Switch>
 					<Route exact path="/" component={HomePage} />
 					<Route path="/about" component={AboutPage} />
+					<Route path="/addDare" render={() => <AddDare addToList={this.addDare} />}/>
 					<Route path="/dare" render={() => <DareList dareList={this.state.dareList} complete={this.dareComplete} fail={this.dareFail} />}/>
 				</Switch>
 			</div>
