@@ -30,7 +30,7 @@ class App extends React.Component {
 
   addDare(dare, bool, strike, timer, timerTime, repeat, maxStrikes) {
     let currentTime = new Date;
-    let newDare = {bool: true, strikes: true, timer: true, timerTimeMins: 1, repeat: false, maxStrikes: 3, dare: "This is the dare", complete: false, fail: false, timeCreated: currentTime}
+    let newDare = {bool: true, strikes: true, timer: true, timerTimeMins: timerTime, repeat: false, maxStrikes: 3, dare: "This is the dare", complete: false, fail: false, timeCreated: currentTime}
     this.state.dareList.push(newDare)
     this.setState({dareList: this.state.dareList});
   }

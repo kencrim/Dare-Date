@@ -6,13 +6,25 @@ class AddDare extends React.Component {
   
   constructor(props) {
     super(props);
+    this.state={
+      dareTime : 1
+    }
+    this.timeChange = this.timeChange.bind(this)
+  }
+
+  timeChange(event) {
+    this.setState({dareTime: event.target.value})
   }
 
 	render(){
 		return (
 			<div className="jumbotron">
         <h3>Add A New Dare!</h3>
-        <button onClick={this.props.addToList}>Add Dare</button>
+        <button onClick={() => this.props.addToList(null,null,null,null,this.state.dareTime)}>Add Dare</button>
+        <div>
+        Time Length
+          <input onChange={this.timeChange}></input>
+        </div>
 			</div>
 			);
 	}
