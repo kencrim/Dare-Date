@@ -6,17 +6,20 @@ class DareList extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = {
-      dareList: [{bool: true, strikes: true, timer: true, currentStrikes: 0, date: null}]
-    };
   }
 
 	render(){
 		return (
 			<div className="jumbotron">
         <h3>Dare List</h3>
-        {this.state.dareList.map((dare) => {
-          return (<Dare dare={dare}/>);
+        {this.props.dareList.map((dare, index) => {
+          if(dare.complete){
+            return (<div key={index}>Completed Dare!</div>)
+          } else if(dare.fail){
+            return (<div key={index}>Failed Dare!</div>)
+          } else {
+            return (<Dare key={index} dare={dare} complete={this.props.complete} fail={this.props.fail}/>);
+          }
         })}
 			</div>
 			);

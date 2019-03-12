@@ -8,6 +8,8 @@ const Header = () => {
 			{"  |  "}
 			<Link style={{textDecoration:"none"}} to="about" activeclassname="active">About</Link>
 			{"  |  "}
+      <Link style={{textDecoration:"none"}} to="addDare" activeclassname="active">Add Dare</Link>
+      {"  |  "}
 			<Link style={{textDecoration:"none"}} to="dare" activeclassname="active">Dare List</Link>
 		</nav>
 	);
