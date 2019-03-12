@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import Header from './common/Header';
-import {Route, Switch } from 'react-router-dom';
+import {Route, Switch, BrowserRouter } from 'react-router-dom';
 import HomePage from '../components/home/HomePage';
 import AboutPage from '../components/about/AboutPage';
 import DareList from '../components/dare/DareList';

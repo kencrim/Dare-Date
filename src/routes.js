@@ -4,6 +4,7 @@ import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 import DareList from './components/dare/DareList';
 
+
 export default () => {
 	return (
 		<Switch>
